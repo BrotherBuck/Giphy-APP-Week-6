@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html>
+​
+		<head>
+
+			<h1><title>Giphy API Homework</title></h1>
+			<style type="text/css">
+				button, div, form, input {
+					margin: 10px;
+				}
+			</style>
+	
+				<meta charset="UTF-8">	
+				<link rel="stylesheet" href="assets/css/reset.css">
+				<link rel="stylesheet" href="assets/css/style.css">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+				<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	
+		</head>
+​
+	<body>
+
+		<div class="upperContainer"> </div>
+
+		<div class="container">
+	 	 <h1>Holiday Gifs</h1>
+
+	  		<!-- Rendered Buttons will get Dumped Here  -->
+	  	<div id="buttonsView"></div>
+
+			  <form id="gif-form">
+			    <label for="gifs-input">Add Gifs</label>
+			    <input type="text" id="gif-input"><br>
+
+			    <div class="upperContainer"> </div>
+
+			    
+			    <!-- Button triggers new gif to be added -->
+			    <input id="addGif" type="submit" value="Add Gifs">
+			  </form>
+
+
+			  <!-- Gifs will Get Dumped Dere -->
+			  <div id="gifView"></div>
+
+		<script type="text/javascript">
+		
+		//Code here make an array of GIFs and make buttons out of them. I am using Holidays
+
+		// Initial array of gifs
+		var gifs = ['4th of July', 'Labor Day', 'Vacation', 'Halloween', 'Christmas'];
+
+
+
+	//Code here so that when you click on a button, you produce 10 images from giphy and put them on the page.-->
+
+
+
+
+
+
+
+	//Code here so when you click on the image, the gif plays. When you click again, the gif stops playing.-->
+
+ $('.animalImage').on('click', function(){
+	    	
+	        var state = $(this).attr('data-state'); 
+	       
+            if ( state == 'still'){
+                $(this).attr('src', $(this).data('animate'));
+                $(this).attr('data-state', 'animate');
+            }else{
+                $(this).attr('src', $(this).data('still'));
+                $(this).attr('data-state', 'still');
+            }
+         
+
+	    });
+
+
+
+
+
+//Code here that makes a form that takes the value and puts it into the array and remakes the buttons on the page.-->
+
+
+
+
+
+
+
+
+//Code here that displays the rating of the image on the page g,pg,r -->
+
+
+
+
+
+
+
+
+	
+
+
+	<script src="assets/javascript/app.js"></script>
+
+
+		<div class="lowerContainer">
+
+		</div>
+
+	</body>
+
+
+	<footer>
+		&copy; Copyright 2016 John Thomas Dispennette
+		
+	</footer>
+
+
+
+</html>
